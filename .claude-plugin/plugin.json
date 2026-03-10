@@ -1,0 +1,9 @@
+{
+  "name": "mail",
+  "version": "0.3.0",
+  "description": "LAN email polling and communication for Claude Code agents via OpenSMTPD + Maildir",
+  "author": {
+    "name": "SoftwareCats",
+    "url": "https://github.com/softwarecatscom"
+  }
+}

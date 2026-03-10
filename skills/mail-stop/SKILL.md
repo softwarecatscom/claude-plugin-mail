@@ -5,7 +5,7 @@ description: Stop the mail polling loop. Use when the user says "stop mail", "st
 
 # Stop Mail Loop
 
-Stop the recurring mail polling loop started by the mail:loop skill.
+Stop the recurring mail polling loop started by the mail-loop skill.
 
 ## Steps
 

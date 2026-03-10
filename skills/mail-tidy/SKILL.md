@@ -5,7 +5,8 @@ description: Clean up read messages from the inbox. Use when the user says "tidy
 
 # Tidy Inbox
 
-Move read messages from ~/Mail/new to ~/Mail/cur and optionally delete old mail.
+Bulk cleanup of messages in ~/Mail. Use this for messages that weren't already
+moved by mail-read during normal processing.
 
 ## Steps
 

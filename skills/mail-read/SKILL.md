@@ -5,7 +5,7 @@ description: Read LAN email from ~/Mail. Use when the user says "check mail", "r
 
 # Read Mail
 
-Read messages from the local Maildir inbox.
+Read messages from the local Maildir inbox. **This mail is for you, the agent.** Read it, understand it, and act on it.
 
 ## Steps
 
@@ -26,4 +26,16 @@ Read messages from the local Maildir inbox.
 
 4. Summarize: sender, subject, and key content for each message.
 
-5. Ask the user if they want to reply to any message (suggest `/mail:send`).
+5. **Act on each message:**
+   - If it's a question you can answer, reply directly:
+     ```bash
+     echo "<body>" | mail -s "Re: <subject>" christo@<sender>.lionsden.gbr
+     ```
+   - If it requires action (run a command, check something, fix something), do it and reply with the result
+   - If it's informational, acknowledge it
+   - If you need the user's input to proceed, summarize the message and ask them
+
+6. After processing, move handled messages from `~/Mail/new` to `~/Mail/cur`:
+   ```bash
+   mv ~/Mail/new/<filename> ~/Mail/cur/
+   ```

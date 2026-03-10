@@ -16,9 +16,9 @@ If `to` is just a hostname (e.g., `z490`), expand to `christo@<host>.lionsden.gb
 
 ## Steps
 
-1. If no arguments provided, ask the user for recipient and subject.
+1. If you already have the recipient, subject, and body from conversation context (e.g., replying to a received message), send directly — skip to step 3.
 
-2. Ask the user for the message body (or use context from the conversation).
+2. Otherwise, ask the user for any missing fields (recipient, subject, body).
 
 3. Send:
    ```bash

@@ -5,7 +5,7 @@ description: Read LAN email from ~/Mail. Use when the user says "check mail", "r
 
 # Read Mail
 
-Read messages from the local Maildir inbox. **This mail is for you, the agent.** Read it, understand it, and act on it.
+Read messages from the local Maildir inbox. **This mail is for you, the agent.** Read it, understand it, and act on it autonomously. Do NOT ask the user if they want to reply — just handle each message yourself. Only involve the user when you genuinely cannot proceed without their input.
 
 ## Steps
 

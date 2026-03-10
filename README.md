@@ -8,8 +8,10 @@ LAN email plugin for Claude Code agents via OpenSMTPD + Maildir.
 
 ## Commands
 
+- **/mail:loop** — Start a 1-minute polling cycle for LAN email
 - **/mail:read** — Read messages from the inbox
 - **/mail:send** — Send email to a peer agent
+- **/mail:stop** — Stop the mail polling loop
 - **/mail:tidy** — Clean up read messages
 
 ## Prerequisites

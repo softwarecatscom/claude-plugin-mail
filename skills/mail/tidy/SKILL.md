@@ -1,6 +1,6 @@
 ---
 name: tidy
-description: Clean up read messages from the inbox
+description: Clean up read messages from the inbox. Use when the user says "tidy mail", "clean inbox", "archive messages", or wants to move processed mail out of new.
 ---
 
 # Tidy Inbox

@@ -25,8 +25,12 @@ Each minute, the scheduled prompt runs. The agent should:
 1. Check `~/Mail/new` for unread messages using mblaze
 2. If new messages exist:
    - Display each message with `mshow`
-   - Summarize the sender, subject, and key content for the user
-   - Ask if the user wants to reply (suggest `/mail:send`)
+   - **This mail is for you, the agent.** Read it, understand it, and act on it:
+     - If it's a question you can answer, reply directly using `echo "body" | mail -s "Re: subject" christo@<sender>.lionsden.gbr`
+     - If it requires action (run a command, check something, fix something), do it and reply with the result
+     - If it's informational, acknowledge it
+     - If you need the user's input to proceed, summarize the message and ask them
+   - After replying, move the message from `~/Mail/new` to `~/Mail/cur`
 3. If no new messages: produce no output (stay quiet to avoid noise)
 
 ## Reference

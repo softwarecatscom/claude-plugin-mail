@@ -1,6 +1,6 @@
 ---
 name: stop
-description: Stop the mail polling loop
+description: Stop the mail polling loop. Use when the user says "stop mail", "stop polling", "cancel mail loop", or wants to end the recurring mail check.
 ---
 
 # Stop Mail Loop

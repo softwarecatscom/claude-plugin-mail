@@ -1,6 +1,6 @@
 ---
-name: mail-loop
-description: Start a /loop 1m polling cycle for LAN email. Use this skill when the user says "check mail", "start mail polling", "mail loop", "/mail:loop", or wants to monitor their LAN inbox for new messages. Also use when a peer agent's BOOTSTRAP.md says to start polling.
+name: loop
+description: Start a /loop 1m polling cycle for LAN email. Use this skill when the user says "start mail polling", "mail loop", or wants to monitor their LAN inbox. Also use when a peer agent's BOOTSTRAP.md says to start polling.
 ---
 
 # Mail Loop
@@ -26,26 +26,8 @@ Each minute, the scheduled prompt runs. The agent should:
 2. If new messages exist:
    - Display each message with `mshow`
    - Summarize the sender, subject, and key content for the user
-   - Ask if the user wants to reply
+   - Ask if the user wants to reply (suggest `/mail:send`)
 3. If no new messages: produce no output (stay quiet to avoid noise)
-
-## Sending a reply
-
-When the user wants to reply to a message:
-
-```bash
-echo "reply body" | mail -s "Re: subject" christo@<peer>.lionsden.gbr
-```
-
-## Tidying up
-
-After messages are read, they move from `~/Mail/new` to `~/Mail/cur` automatically
-when accessed by mail clients. To manually tidy:
-
-```bash
-# move a processed message to cur
-mv ~/Mail/new/<filename> ~/Mail/cur/
-```
 
 ## Reference
 

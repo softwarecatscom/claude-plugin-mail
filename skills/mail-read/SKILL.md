@@ -1,5 +1,5 @@
 ---
-name: read
+name: mail-read
 description: Read LAN email from ~/Mail. Use when the user says "check mail", "read mail", "any new messages", or wants to see their inbox.
 ---
 

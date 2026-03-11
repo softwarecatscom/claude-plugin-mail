@@ -1,5 +1,4 @@
 ---
-name: tidy
 description: Clean up read messages from the inbox
 ---
 

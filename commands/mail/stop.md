@@ -1,5 +1,4 @@
 ---
-name: stop
 description: Stop the mail polling loop
 ---
 

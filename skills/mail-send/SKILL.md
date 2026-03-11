@@ -1,5 +1,5 @@
 ---
-name: send
+name: mail:send
 description: Send LAN email to a peer agent. Use when the user says "send mail", "email z490", "reply to", or wants to send a message to another host.
 ---
 

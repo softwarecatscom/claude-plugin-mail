@@ -1,5 +1,4 @@
 ---
-name: read
 description: Read LAN email from ~/Mail
 ---
 

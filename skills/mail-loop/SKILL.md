@@ -1,5 +1,5 @@
 ---
-name: loop
+name: mail:loop
 description: Start a /loop 1m polling cycle for LAN email. Use this skill when the user says "start mail polling", "mail loop", or wants to monitor their LAN inbox. Also use when a peer agent's BOOTSTRAP.md says to start polling.
 ---
 
